@@ -1,11 +1,17 @@
 import { AppBar, Toolbar, Box, Typography, Button } from '@mui/material'
-import { StyledLink } from '../styles/styled'
+import { StyledLink, StyledAppBar } from '../styles/styled'
 
 export default function Nav() {
   return (
     <>
-      <AppBar position="relative">
-        <Toolbar sx={{ justifyContent: 'space-between', margin: ' 0 1em' }}>
+      <StyledAppBar position="relative">
+        <Toolbar
+          sx={{
+            justifyContent: 'space-between',
+            margin: ' 0 1em',
+            height: '100%',
+          }}
+        >
           {/* Detail in the top left */}
           <Box>
             <StyledLink href="/">
@@ -24,7 +30,7 @@ export default function Nav() {
           </Box>
           {/* end?? */}
         </Toolbar>
-      </AppBar>
+      </StyledAppBar>
     </>
   )
 }

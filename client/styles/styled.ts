@@ -1,6 +1,12 @@
 import styled from '@emotion/styled'
-import { Link, Typography, Box } from '@mui/material'
+import { Link, Typography, Box, AppBar } from '@mui/material'
 import { StyledProps } from '../../commons/model'
+
+export const StyledAppBar = styled(AppBar)<StyledProps>(() => ({
+  margin: '0px',
+  padding: '0px',
+  height: '80px',
+}))
 
 export const StyledLink = styled(Link)<StyledProps>(() => ({
   textDecoration: 'none',
