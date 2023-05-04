@@ -1,35 +1,14 @@
-function App() {
+import * as React from 'react'
+// import Nav from './Nav'
+import Home from './Home'
+import Footer from './Footer'
+
+export default function App() {
   return (
     <>
-      <header className="header">
-
-        <h1>My App home page</h1>
-
-      </header>
-      <section className="main">{/* add your code here */}</section>
+      {/* <Nav /> */}
+      <Home />
+      <Footer />
     </>
   )
 }
-
-export default App
-
-// import Family from './Family'
-
-// import { Routes, Route } from 'react-router-dom'
-
-// function App() {
-//   return (
-//     <>
-//       <header className="header">
-//         <h1>Welcome to the Knudsen Family List</h1>
-//       </header>
-//       <section className="main">
-//         <Routes>
-//           <Route path="/" element={<Family />} />
-//         </Routes>
-//       </section>
-//     </>
-//   )
-// }
-
-// export default App

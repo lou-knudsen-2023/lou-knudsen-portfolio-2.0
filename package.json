@@ -84,11 +84,17 @@
   },
   "dependencies": {
     "@devacademy/eslint-config": "^1.8.0",
+    "@emotion/react": "^11.10.8",
+    "@emotion/styled": "^11.10.8",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.12.3",
+    "@mui/styled-engine-sc": "^5.12.0",
     "@redux-devtools/extension": "^3.2.3",
     "express": "^4.17.2",
     "knex": "^2.3.0",
     "pg": "^8.8.0",
     "sqlite3": "^5.1.2",
+    "styled-components": "^5.3.10",
     "superagent": "7.1.1",
     "ts-node": "^10.9.1"
   },
