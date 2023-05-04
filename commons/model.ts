@@ -11,4 +11,5 @@ export interface StyledProps {
   textAlign?: string
   align?: string
   color?: string
+  alignContent?: string
 }

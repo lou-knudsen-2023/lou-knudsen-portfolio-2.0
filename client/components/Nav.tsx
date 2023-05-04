@@ -1,5 +1,14 @@
-import { AppBar, Toolbar, Box, Typography, Button } from '@mui/material'
+import {
+  AppBar,
+  Toolbar,
+  Box,
+  Typography,
+  Button,
+  IconButton,
+} from '@mui/material'
 import { StyledLink, StyledAppBar } from '../styles/styled'
+import GitHubIcon from '@mui/icons-material/GitHub'
+import MailOutlineIcon from '@mui/icons-material/MailOutline'
 
 export default function Nav() {
   return (
@@ -12,28 +21,72 @@ export default function Nav() {
             height: '100%',
           }}
         >
-          {/* Detail in the top left */}
-          <Box>
-            <StyledLink href="/">
-              <Typography
-                variant="h3"
-                sx={{
-                  fontSize: '1.8rem',
-                  fontWeight: '900',
-                  letterSpacing: '0.05em',
-                }}
-                className="logo"
-              >
-                LOU
-              </Typography>
-            </StyledLink>
+          <StyledLink href="/">
+            <Typography
+              component="h2"
+              variant="h5"
+              color="inherit"
+              align="center"
+              noWrap
+              sx={{ flex: 1 }}
+            >
+              Portfolio
+            </Typography>
+          </StyledLink>
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              margin: ' 0 1em',
+              height: '100%',
+              borderSpacing: '0.1em',
+            }}
+          >
+            <IconButton>
+              <GitHubIcon
+                fontSize="large"
+                color="secondary"
+                sx={{ margin: '5px' }}
+              />
+              <MailOutlineIcon
+                fontSize="large"
+                color="secondary"
+                sx={{ margin: '5px' }}
+              />
+            </IconButton>
+            <Button
+              variant="outlined"
+              size="medium"
+              sx={{ color: 'whitesmoke' }}
+            >
+              View CV
+            </Button>
           </Box>
-          {/* end?? */}
         </Toolbar>
       </StyledAppBar>
     </>
   )
 }
+
+// ;<Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
+//   <Button size="small">Subscribe</Button>
+//   <Typography
+//     component="h2"
+//     variant="h5"
+//     color="inherit"
+//     align="center"
+//     noWrap
+//     sx={{ flex: 1 }}
+//   >
+//     {title}
+//   </Typography>
+//   <IconButton>
+//     <SearchIcon />
+//   </IconButton>
+//   <Button variant="outlined" size="small">
+//     Sign up
+//   </Button>
+// </Toolbar>
 
 // BUTTON LINKED IN MATERIAL UI//
 {

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { Link, Typography, Box, AppBar } from '@mui/material'
+import { Link, Typography, Box, AppBar, Container } from '@mui/material'
 import { StyledProps } from '../../commons/model'
 
 export const StyledAppBar = styled(AppBar)<StyledProps>(() => ({
@@ -29,3 +29,5 @@ export const StyledMainTypo = styled(Typography)<StyledProps>(() => ({
   fontWeight: '300',
   color: '#10466f',
 }))
+
+export const StyledMainContainer = styled(Container)<StyledProps>(() => ({}))

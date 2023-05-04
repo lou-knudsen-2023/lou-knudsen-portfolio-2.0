@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Link from '@mui/material/Link'
+import { Container } from '@mui/material'
 import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon'
 import Typography from '@mui/material/Typography'
 
@@ -13,10 +14,16 @@ function LightBulbIcon(props: SvgIconProps) {
 
 export default function Lightbulb() {
   return (
-    <Typography sx={{ mt: 6, mb: 3 }} color="text.secondary">
-      <LightBulbIcon sx={{ mr: 1, verticalAlign: 'middle' }} />
-      GtiHub: See more{' '}
-      <Link href="https://github.com/lou-knudsen-2023">code</Link> in my GtiHub.
-    </Typography>
+    <Container maxWidth="sm">
+      <Typography
+        sx={{ mt: 6, mb: 3, textAlign: 'center' }}
+        color="text.secondary"
+      >
+        <LightBulbIcon sx={{ mr: 1, verticalAlign: 'middle' }} />
+        GtiHub: See more{' '}
+        <Link href="https://github.com/lou-knudsen-2023">code</Link> in my
+        GtiHub.
+      </Typography>
+    </Container>
   )
 }

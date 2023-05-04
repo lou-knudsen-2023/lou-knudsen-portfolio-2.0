@@ -1,8 +1,10 @@
 import { Typography, Link } from '@mui/material'
+import Lightbulb from './Lightbulb'
 
 export default function Footer() {
   return (
     <>
+      <Lightbulb />
       <Copyright />
     </>
   )
