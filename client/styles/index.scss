@@ -1,11 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Rajdhani:wght@300;400;500;600&display=swap');
+
+
 body {
   position: absolute;
   top: 0;
   left: 0;
   margin: 0;
   padding: 20px;
+  width: 100%;
   font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
 
+.custom-appbar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.3em;
+    width: 90% !important;
+    margin: 1em auto;
+    box-shadow: none !important;
+    border-color: #397fb54f !important;
+    background-color: transparent !important;
+    transition: background-color  border-color  1s ease !important;
+    border: 0.5px;
+    
+  }
