@@ -12,19 +12,80 @@ body {
 }
 
 
+//TO UPDATE IN STYLED COMPONENTS FILE
+
+
+  .logo{
+    color: #10466f !important;
+    &:hover{
+      color: #176aa9 !important;
+    }
+  }
+
+  .label {
+  color: #10466f  !important;
+  font-weight: 500;
+  &:hover {
+    color:#176aa9 !important;
+  }
+}
+
+header a{
+  color:#fff;
+  &:hover{
+    color: #000;
+  }
+}
+
+.custom-appbar.scroll {
+  backdrop-filter: blur(6px) !important;
+  background-color: #f0f0f046 !important;
+}
 
 .custom-appbar {
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 0.3em;
-    width: 90% !important;
-    margin: 1em auto;
-    box-shadow: none !important;
-    border-color: #397fb54f !important;
-    background-color: transparent !important;
-    transition: background-color  border-color  1s ease !important;
-    border: 0.5px;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.3em;
+  width: 90% !important;
+  margin: 1em auto;
+  box-shadow: none !important;
+  border-color: #397fb54f !important;
+  background-color: transparent !important;
+  transition: background-color  border-color  1s ease !important;
+  border: 0.5px; 
+}
+
+.button-style{
+  border-radius: 20px !important;
+  font-weight: 600 !important;
+  font-size: 0.7em !important;
+  color: #10466f!important;
+  border-color: #10466f !important;
+  letter-spacing: 0.08em;
+  
+  &:hover {
+    color: white !important;
+    background-color: #10466f !important; 
+  }
+}
+
+.login{
+  border-radius: 20px !important;
+  font-weight: 600 !important;
+  font-size: 0.7em !important;
+  color:white !important;
+  background-color:  #10466f  !important;
+  letter-spacing: 0.08em;
+  box-shadow: none !important;
+
+  
+  &:hover {
+    color: white !important;
+    background-color: #176aa9!important;
+    
+
     
   }
+}
