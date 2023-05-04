@@ -11,15 +11,12 @@ function LightBulbIcon(props: SvgIconProps) {
   )
 }
 
-export default function ProTip() {
+export default function Lightbulb() {
   return (
     <Typography sx={{ mt: 6, mb: 3 }} color="text.secondary">
       <LightBulbIcon sx={{ mr: 1, verticalAlign: 'middle' }} />
-      Pro tip: See more{' '}
-      <Link href="https://mui.com/getting-started/templates/">
-        templates
-      </Link>{' '}
-      in the MUI documentation.
+      GtiHub: See more{' '}
+      <Link href="https://github.com/lou-knudsen-2023">code</Link> in my GtiHub.
     </Typography>
   )
 }

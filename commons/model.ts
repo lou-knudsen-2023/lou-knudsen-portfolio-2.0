@@ -10,4 +10,5 @@ export interface StyledProps {
   alt?: string
   textAlign?: string
   align?: string
+  color?: string
 }
