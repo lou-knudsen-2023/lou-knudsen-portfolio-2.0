@@ -56,7 +56,7 @@ export default function Nav() {
             </IconButton>
             <Button
               variant="outlined"
-              size="medium"
+              size="large"
               sx={{ color: 'whitesmoke' }}
             >
               View CV
