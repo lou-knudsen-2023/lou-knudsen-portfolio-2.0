@@ -16,13 +16,12 @@ export default function Lightbulb() {
   return (
     <Container maxWidth="sm">
       <Typography
-        sx={{ mt: 6, mb: 3, textAlign: 'center' }}
+        sx={{ mt: 6, mb: 2, textAlign: 'center' }}
         color="text.secondary"
       >
         <LightBulbIcon sx={{ mr: 1, verticalAlign: 'middle' }} />
-        GtiHub: See more{' '}
-        <Link href="https://github.com/lou-knudsen-2023">code</Link> in my
-        GtiHub.
+        Thanks heaps for checking out my site. Feel free to get in touch!{' '}
+        {/* <Link href="https://github.com/lou-knudsen-2023">code</Link> */}
       </Typography>
     </Container>
   )

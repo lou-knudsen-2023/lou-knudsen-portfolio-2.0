@@ -12,7 +12,12 @@ export default function Footer() {
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="text.secondary" align="center">
+    <Typography
+      variant="body2"
+      color="text.secondary"
+      align="center"
+      sx={{ paddingBottom: '50px' }}
+    >
       {'Copyright © '}
       <Link color="inherit" href="https://lou.knudsen.com/">
         lou.knudsen.com

@@ -6,6 +6,7 @@ import {
   Card,
   CardMedia,
   Link,
+  Box,
 } from '@mui/material'
 // import { StyledProps } from "../../commons/model";
 
@@ -13,7 +14,7 @@ export default function ProjectCard() {
   return (
     <>
       {/* project one */}
-      <Grid container spacing={2} justifyContent="center">
+      <Grid container spacing={6} justifyContent="center">
         <Grid item margin={'10px'}>
           <CardActionArea id="buddy" component="a" href="#">
             <Card sx={{ display: 'flex', flexwrap: 'wrap' }}>
@@ -31,12 +32,14 @@ export default function ProjectCard() {
                   people new to Wellington with the locals. Using most of the
                   tech learnt over the course, plus Material UI.
                 </Typography>
-                <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>
-                  <Link>www.XXXXX.com</Link>
-                </Typography>
-                <Typography variant="subtitle1" color="primary">
-                  Click to view the code in GitHub...
-                </Typography>
+                <Box>
+                  <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>
+                    <Link>www.XXXXX.com</Link>
+                  </Typography>
+                  <Typography variant="subtitle1" color="primary">
+                    Click to view the code in GitHub...
+                  </Typography>
+                </Box>
               </CardContent>
               <CardMedia
                 component="img"
@@ -44,6 +47,7 @@ export default function ProjectCard() {
                   width: 160,
                   objectFit: 'contain',
                   display: { xs: 'none', sm: 'block' },
+                  mr: 1,
                 }}
                 image="../images/international.png"
                 alt="website homepage for buddy"
@@ -82,6 +86,7 @@ export default function ProjectCard() {
                   width: 160,
                   objectFit: 'contain',
                   display: { xs: 'none', sm: 'block' },
+                  mr: 1,
                 }}
                 image="../images/weeman.png"
                 alt="website homepage for wee man adventures"
@@ -119,6 +124,7 @@ export default function ProjectCard() {
                   width: 160,
                   objectFit: 'contain',
                   display: { xs: 'none', sm: 'block' },
+                  mr: 1,
                 }}
                 image="../images/lostandfound.png"
                 alt="website homepage for lost and found"
@@ -157,6 +163,7 @@ export default function ProjectCard() {
                   width: 160,
                   objectFit: 'contain',
                   display: { xs: 'none', sm: 'block' },
+                  mr: 1,
                 }}
                 image="../images/international.png"
                 alt="website homepage for buddy"

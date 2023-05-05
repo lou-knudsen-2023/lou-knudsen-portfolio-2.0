@@ -9,6 +9,7 @@ import {
 import { StyledLink, StyledAppBar } from '../styles/styled'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import MailOutlineIcon from '@mui/icons-material/MailOutline'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
 
 export default function Nav() {
   return (
@@ -42,6 +43,13 @@ export default function Nav() {
               borderSpacing: '0.1em',
             }}
           >
+            <Button
+              variant="outlined"
+              size="large"
+              sx={{ color: 'whitesmoke' }}
+            >
+              View CV
+            </Button>
             <IconButton>
               <GitHubIcon
                 fontSize="large"
@@ -53,14 +61,12 @@ export default function Nav() {
                 color="secondary"
                 sx={{ margin: '5px' }}
               />
+              <LinkedInIcon
+                fontSize="large"
+                color="secondary"
+                sx={{ margin: '5px' }}
+              />
             </IconButton>
-            <Button
-              variant="outlined"
-              size="large"
-              sx={{ color: 'whitesmoke' }}
-            >
-              View CV
-            </Button>
           </Box>
         </Toolbar>
       </StyledAppBar>
