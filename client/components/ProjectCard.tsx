@@ -59,7 +59,7 @@ export default function ProjectCard() {
                 sx={{ flex: 1, maxWidth: '350px', minHeight: '260px' }}
               >
                 <Typography component="h2" variant="h5">
-                  Get out of Jail
+                  Wee man adventures
                 </Typography>
                 <Typography variant="subtitle1" color="text.secondary">
                   Feb - April 2023
@@ -83,8 +83,8 @@ export default function ProjectCard() {
                   objectFit: 'contain',
                   display: { xs: 'none', sm: 'block' },
                 }}
-                image="../images/international.png"
-                alt="website homepage for buddy"
+                image="../images/weeman.png"
+                alt="website homepage for wee man adventures"
               />
             </Card>
           </CardActionArea>
@@ -120,8 +120,8 @@ export default function ProjectCard() {
                   objectFit: 'contain',
                   display: { xs: 'none', sm: 'block' },
                 }}
-                image="../images/international.png"
-                alt="website homepage for buddy"
+                image="../images/lostandfound.png"
+                alt="website homepage for lost and found"
               />
             </Card>
           </CardActionArea>
