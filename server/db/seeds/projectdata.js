@@ -14,6 +14,8 @@ exports.seed = async function (knex) {
     {
       id: 1,
       name: 'Buddy',
+      date: '',
+      blurb: '',
       description: 'text',
       tech: 'React',
       role: 'Front End Lead',
@@ -28,6 +30,8 @@ exports.seed = async function (knex) {
     {
       id: 2,
       name: 'Wee Man Adventures',
+      date: '',
+      blurb: '',
       description: 'text',
       tech: 'React',
       role: 'Front End Lead',
@@ -42,6 +46,8 @@ exports.seed = async function (knex) {
     {
       id: 3,
       name: 'Lost and Found',
+      date: '',
+      blurb: '',
       description: 'text',
       tech: 'React',
       role: 'Front End Lead',
@@ -56,6 +62,8 @@ exports.seed = async function (knex) {
     {
       id: 4,
       name: 'Dev deals',
+      date: '',
+      blurb: '',
       description: 'text',
       tech: 'React',
       role: 'Front End Lead',

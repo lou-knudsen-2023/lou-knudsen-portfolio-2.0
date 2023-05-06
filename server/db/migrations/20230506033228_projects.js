@@ -6,6 +6,8 @@ exports.up = function (knex) {
   return knex.schema.createTable('projects', (table) => {
     table.increments('id').primary()
     table.string('name')
+    table.string('date')
+    table.string('blurb')
     table.string('description')
     table.string('tech')
     table.string('role')

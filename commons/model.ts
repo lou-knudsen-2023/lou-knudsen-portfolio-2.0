@@ -17,6 +17,8 @@ export interface StyledProps {
 export interface Projects {
   id: number
   name: string
+  date: string
+  blurb: string
   description: string
   tech: string
   role: string
@@ -30,6 +32,8 @@ export interface Projects {
 export interface UpdateProject {
   id: number
   name: string
+  date: string
+  blurb: string
   description: string
   tech: string
   role: string
