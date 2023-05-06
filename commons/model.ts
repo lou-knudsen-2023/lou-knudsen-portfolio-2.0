@@ -25,3 +25,15 @@ export interface Projects {
   status: string
   stretch: string
 }
+
+export interface UpdateProject {
+  id: number
+  name: string
+  description: string
+  tech: string
+  role: string
+  experience: string
+  learnings: string
+  status: string
+  stretch: string
+}
