@@ -15,16 +15,13 @@ export default function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/project-buddy" element={<ProjectBuddy />} />
-        <Route path="/project-devdeals" element={<ProjectDevDeals />} />
-        <Route path="/project-lostandfound" element={<ProjectLostandFound />} />
-        <Route path="/project-weeman" element={<ProjectWeeMan />} />
+        <Route path="/ProjectBuddy" element={<ProjectBuddy />} />
+        <Route path="/ProjectDevDeals" element={<ProjectDevDeals />} />
+        <Route path="/ProjectLostandFound" element={<ProjectLostandFound />} />
+        <Route path="/ProjectWeeMan" element={<ProjectWeeMan />} />
       </Routes>
       <ProjectCard />
       <Footer />
     </>
   )
-}
-
-{
 }

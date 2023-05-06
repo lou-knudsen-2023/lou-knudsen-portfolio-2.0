@@ -13,3 +13,14 @@ export interface StyledProps {
   color?: string
   alignContent?: string
 }
+
+export interface Projects {
+  id: number
+  name: string
+  description: string
+  tech: string
+  role: string
+  experience: string
+  learnings: string
+  status: string
+}
