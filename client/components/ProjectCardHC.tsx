@@ -175,6 +175,3 @@ export default function ProjectCard() {
     </>
   )
 }
-
-// export default function FeaturedPost(props: StyledProps) {
-//   // const { XX } = props;

@@ -1,32 +1,32 @@
 const express = require('express')
+const router = express.Router()
 
 // grabbing the DB functions folder
 // const db = require('../db/data/familyDb')
 import {
-  getAllFamilyDB,
-  getFamilyByIdDB,
-  delFamMemberDB,
-  addFamMemberDB,
-} from '../db/data/familyDb'
+  getAllProjectsDB,
+  getProjectByIdDB,
+  delProjectDB,
+  addProjectDB,
+} from '../db/data/project-dataDB'
 
 // having the ability to use a router through express
-export const router = express.Router()
 
 router.get('/', (req, res) => {
-  getAllFamilyDB()
-    .then((family) => {
-      console.log(family)
-      res.json(family)
+  getAllProjectsDB()
+    .then((project) => {
+      console.log('All data is rendering server side. Nice one!')
+      res.json(project)
     })
     .catch((err) => console.log(err.message))
 })
 
 router.get('/:id', (req, res) => {
   const id = req.params.id
-  getFamilyByIdDB(id)
-    .then((family) => {
-      console.log(family)
-      res.json(family)
+  getProjectByIdDB(id)
+    .then((data) => {
+      console.log(data)
+      res.json(data)
     })
     .catch((err) => {
       console.log(err.message)
@@ -43,7 +43,7 @@ router.post('/', (req, res) => {
     image: req.body.image,
   }
 
-  addFamMemberDB(data)
+  addProjectDB(data)
     .then(([newData]) => {
       res.json(newData)
     })
@@ -55,7 +55,7 @@ router.post('/', (req, res) => {
 
 router.delete('/:id', (req, res) => {
   const id = req.params.id
-  delFamMemberDB(id)
+  delProjectDB(id)
     .then(() => {
       res.sendStatus(200)
     })
@@ -64,3 +64,25 @@ router.delete('/:id', (req, res) => {
       res.status(500).send(err.message)
     })
 })
+
+// router.patch('/:id', (req, res) => {
+//   const data = {
+//     title: req.body.title,
+//     content: req.body.content,
+//     category: req.body.category,
+//   }
+//   const id = Number(req.params.id)
+//   console.log(data, id)
+
+//   updateCollectionBD(id, data)
+//     .then((post) => {
+//       console.log('post', post[0])
+//     const xxx = post[0]
+//       res.json(xxx)
+//     })
+//     .catch((err: Error) => {
+//       res.status(500).send(err.message)
+//     })
+// })
+
+export default router

@@ -3,47 +3,50 @@
 //This function returns a promise that resolves to an array of Widget objects.
 
 import request from 'superagent'
-import { Widget, WidgetData } from '../models/Widget'
+import { Projects } from '../../commons/model'
 
 //this url to the widgets.ts file is defined in the server.ts file
 //it connects to the routes -> widgets.ts
-const widgetUrl = '/api/v1/widgets/'
+const projectURL = '/api/v1/projects/'
 
 //When getWidgetsCS() is called, it sends an HTTP GET request to the specified endpoint (api/v1/widgets, or widgets.ts) using the request.get() method.
 //This method returns a promise that resolves to an object containing the response from the server.
 
-export function getWidgetsCS(): Promise<Widget[]> {
-  return request.get(widgetUrl).then((responseObj) => responseObj.body)
+export function getAllProjectsCS(): Promise<Projects[]> {
+  return request.get(projectURL).then((responseObj) => responseObj.body)
 }
 
-export function addWidgets(obj: WidgetData): Promise<Widget> {
-  return request
-    .post('/api/v1/widgets')
-    .send(obj)
-    .then((res) => {
-      return res.body
-    })
-}
-
-export function getAWidgetsCS(id: number): Promise<Widget> {
-  return request.get(`/api/v1/widgets/${id}`).then((res) => {
+export function delProjectCS(id: number) {
+  return request.delete(`/api/v1/projects/${id}`).then((res) => {
     return res.body
   })
 }
 
-export function updateAWidgetCS(id: number, obj: WidgetData): Promise<Widget> {
-  console.log(request)
+export function updateProjectCS(id: number, obj: Projects): Promise<Projects> {
   return request
-    .patch(`/api/v1/widgets/${id}`)
+    .patch(`/api/v1/projects/${id}`)
     .send(obj)
     .then((res) => {
       return res.body
     })
 }
 
-//deleting
-export function delWidgetsCS(id: number): Promise<number> {
+export function getProjectCS(id: number) {
   return request
-    .delete(`/api/v1/widgets/${id}`)
-    .then((responseObj) => responseObj.body)
+    .get(`/api/v1/projects/${id}`) // call internal api here
+    .then((res) => {
+      return res.body
+    })
+    .catch((err) => {
+      return err.message
+    })
+}
+
+export function makeNewCS(newThing: Projects) {
+  return request
+    .post(projectURL)
+    .send(newThing)
+    .then((res) => {
+      return res.body
+    })
 }
