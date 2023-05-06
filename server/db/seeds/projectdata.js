@@ -16,6 +16,7 @@ exports.seed = async function (knex) {
       learnings: 'Other people',
       status: 'MVP done. Stretch tasks to do',
       stretch: 'Ability to bring communication inside',
+      image: 'x',
     },
     {
       id: 2,
@@ -27,6 +28,7 @@ exports.seed = async function (knex) {
       learnings: 'Other people',
       status: 'MVP done. Stretch tasks to do',
       stretch: 'Ability to bring communication inside',
+      image: 'x',
     },
     {
       id: 3,
@@ -38,6 +40,7 @@ exports.seed = async function (knex) {
       learnings: 'Other people',
       status: 'MVP done. Stretch tasks to do',
       stretch: 'Ability to bring communication inside',
+      image: 'x',
     },
     {
       id: 4,
@@ -49,6 +52,7 @@ exports.seed = async function (knex) {
       learnings: 'Other people',
       status: 'MVP done. Stretch tasks to do',
       stretch: 'Ability to bring communication inside',
+      image: 'x',
     },
   ])
 }

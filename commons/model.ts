@@ -24,6 +24,7 @@ export interface Projects {
   learnings: string
   status: string
   stretch: string
+  image: string
 }
 
 export interface UpdateProject {
@@ -36,4 +37,5 @@ export interface UpdateProject {
   learnings: string
   status: string
   stretch: string
+  image: string
 }

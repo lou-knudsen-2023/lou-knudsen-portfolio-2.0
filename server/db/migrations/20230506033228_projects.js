@@ -13,6 +13,7 @@ exports.up = function (knex) {
     table.string('learnings')
     table.string('stretch')
     table.string('status')
+    table.string('image')
   })
 }
 
