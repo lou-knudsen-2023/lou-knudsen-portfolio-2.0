@@ -15,7 +15,7 @@ import {
 router.get('/', (req, res) => {
   getAllProjectsDB()
     .then((project) => {
-      console.log(project)
+      console.log('All data is rendering server side. Nice one!')
       res.json(project)
     })
     .catch((err) => console.log(err.message))
