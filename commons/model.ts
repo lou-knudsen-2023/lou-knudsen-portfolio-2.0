@@ -23,4 +23,5 @@ export interface Projects {
   experience: string
   learnings: string
   status: string
+  stretch: string
 }

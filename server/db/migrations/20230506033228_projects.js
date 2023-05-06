@@ -11,6 +11,7 @@ exports.up = function (knex) {
     table.string('role')
     table.string('experience')
     table.string('learnings')
+    table.string('stretch')
     table.string('status')
   })
 }
