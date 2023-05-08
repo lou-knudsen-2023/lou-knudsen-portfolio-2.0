@@ -46,7 +46,7 @@ export default function AllProjects(props: ProjectsPostProps) {
   return (
     <Container className="posts">
       {post.map((post) => (
-        <Grid key={post.id} item xs={12} md={6}>
+        <Grid key={post.id} container spacing={4}>
           <CardActionArea component="a" href="#">
             <Card sx={{ display: 'flex' }}>
               <CardContent sx={{ flex: 1 }}>
@@ -75,6 +75,6 @@ export default function AllProjects(props: ProjectsPostProps) {
       ))}
     </Container>
   )
-}
+      }
 
 

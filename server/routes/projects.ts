@@ -18,6 +18,7 @@ router.get('/', (req, res) => {
       console.log('All data is rendering server side. Nice one!')
       res.json(project)
     })
+    console.log(err.message)
     .catch((err) => console.log(err.message))
 })
 
@@ -25,7 +26,7 @@ router.get('/:id', (req, res) => {
   const id = req.params.id
   getProjectByIdDB(id)
     .then((data) => {
-      console.log(data)
+      cconsole.log('All data for ID is rendering server side. Nice one!')
       res.json(data)
     })
     .catch((err) => {
