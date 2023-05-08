@@ -3,7 +3,7 @@
  * @returns { Promise<void> }
  */
 
-const { imageCompression } = require('./utils')
+// const { imageCompression } = require('./utils')
 
 
 const { readFile } = require('node:fs/promises')

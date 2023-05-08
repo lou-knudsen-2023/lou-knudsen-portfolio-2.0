@@ -31,7 +31,6 @@ interface ProjectsPostProps {
 
 export default function AllProjects(props: ProjectsPostProps) {
   const [post, setProjects] = useState<Projects[]>([])
-  console.log(getAllProjectsCS())
 
   useEffect(() => {
     getAllProjectsCS()
@@ -69,8 +68,9 @@ export default function AllProjects(props: ProjectsPostProps) {
               <CardMedia
                 component="img"
                 sx={{ width: 160, display: { xs: 'none', sm: 'block' } }}
-                image={post.image}
+                src={`data:image/png;base64, ${post.image}`}
                 alt={`a screenshot of the webpage for project ${post.name}`}
+
               />
             </Card>
           </CardActionArea>

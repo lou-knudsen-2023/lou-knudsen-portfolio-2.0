@@ -2,16 +2,13 @@ import imageCompression from 'browser-image-compression'
 
   const sharp = require('sharp')
 
-  async function imageCompression(imageData) {
+export default function imageCompression(imageData) {
     const compressedImage = await sharp(Buffer.from(imageData, 'base64'))
       .resize({ width: 500 })
       .toBuffer()
     return compressedImage.toString('base64')
   }
   
-  module.exports = {
-    imageCompression
-  }
 
 
 // This code uses the browser-image-compression library to compress the image.
