@@ -34,11 +34,14 @@ export default function AllProjects(props: ProjectsPostProps) {
 
   useEffect(() => {
     getAllProjectsCS()
-    fetch('/')
-      .then((response) => response.json())
-      .then((data) => setProjects(data))
-      .catch((error) => console.error('Error fetching data:', error))
-  }, [])
+      .then((data) => {
+        setProjects(data)
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  }, []);
+
 
   return (
     <Container className="posts">
@@ -74,21 +77,4 @@ export default function AllProjects(props: ProjectsPostProps) {
   )
 }
 
-// interface Props {
-//   props: Projects[]
-// }
 
-// function Posts(props: Props) {
-//   return (
-//     <div className="posts">
-//       <h1 className="content-subhead">Posts</h1>
-//       {props.props?.map((post) => {
-//         return <CardSummary key={post.id} />
-//       })}
-//     </div>
-//   )
-// }
-
-// export default Posts
-
-// // post={post}
