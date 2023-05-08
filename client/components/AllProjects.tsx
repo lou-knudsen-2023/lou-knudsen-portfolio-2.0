@@ -31,6 +31,7 @@ interface ProjectsPostProps {
 
 export default function AllProjects(props: ProjectsPostProps) {
   const [post, setProjects] = useState<Projects[]>([])
+  console.log(getAllProjectsCS())
 
   useEffect(() => {
     getAllProjectsCS()
@@ -44,10 +45,12 @@ export default function AllProjects(props: ProjectsPostProps) {
 
 
   return (
-    <Container className="posts">
+    <Container maxWidth='lg'>
+      <Grid container spacing={4}>
+ 
       {post.map((post) => (
-        <Grid key={post.id} container spacing={4}>
-          <CardActionArea component="a" href="#">
+        <Grid key={post.id}>
+          <CardActionArea component="a" href="#" sx={{maxWidth: "350px"}}>
             <Card sx={{ display: 'flex' }}>
               <CardContent sx={{ flex: 1 }}>
                 <Typography component="h2" variant="h5">
@@ -73,8 +76,9 @@ export default function AllProjects(props: ProjectsPostProps) {
           </CardActionArea>
         </Grid>
       ))}
+      </Grid>
     </Container>
   )
-      }
+}
 
 

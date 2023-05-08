@@ -3,6 +3,9 @@
  * @returns { Promise<void> }
  */
 
+const { imageCompression } = require('./utils')
+
+
 const { readFile } = require('node:fs/promises')
 const { join } = require('node:path')
 const Base64 = require('base64-arraybuffer')
@@ -14,8 +17,8 @@ exports.seed = async function (knex) {
     {
       id: 1,
       name: 'Buddy',
-      date: '',
-      blurb: '',
+      date: 'April, 2023',
+      blurb: 'This is a project',
       description: 'text',
       tech: 'React',
       role: 'Front End Lead',
@@ -30,8 +33,8 @@ exports.seed = async function (knex) {
     {
       id: 2,
       name: 'Wee Man Adventures',
-      date: '',
-      blurb: '',
+      date: 'April, 2023',
+      blurb: 'This is a project',
       description: 'text',
       tech: 'React',
       role: 'Front End Lead',
@@ -46,8 +49,8 @@ exports.seed = async function (knex) {
     {
       id: 3,
       name: 'Lost and Found',
-      date: '',
-      blurb: '',
+      date: 'April, 2023',
+      blurb: 'This is a project',
       description: 'text',
       tech: 'React',
       role: 'Front End Lead',
@@ -62,8 +65,8 @@ exports.seed = async function (knex) {
     {
       id: 4,
       name: 'Dev deals',
-      date: '',
-      blurb: '',
+      date: 'April, 2023',
+      blurb: 'This is a project',
       description: 'text',
       tech: 'React',
       role: 'Front End Lead',

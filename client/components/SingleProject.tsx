@@ -20,7 +20,7 @@ return (
       <Container maxWidth="lg" key={value.id}>
         <Box>
           <Typography>
-            {value.name}. Date: {value.date}
+            {value.name}
           </Typography>
         </Box>
       </Container>
