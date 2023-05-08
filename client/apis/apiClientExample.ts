@@ -13,7 +13,9 @@ const projectURL = '/api/v1/projects/'
 //This method returns a promise that resolves to an object containing the response from the server.
 
 export function getAllProjectsCS(): Promise<Projects[]> {
-  return request.get(projectURL).then((responseObj) => responseObj.body)
+  return request.get(projectURL)
+  .then((responseObj) => responseObj.body)
+  console.log(responseObj.body)
 }
 
 export function delProjectCS(id: number) {
@@ -32,6 +34,7 @@ export function updateProjectCS(id: number, obj: Projects): Promise<Projects> {
 }
 
 export function getProjectCS(id: number) {
+  console.log(id)
   return request
     .get(`/api/v1/projects/${id}`) // call internal api here
     .then((res) => {

@@ -4,6 +4,7 @@ import Nav from './Nav'
 import Home from './Home'
 import Footer from './Footer'
 import ProjectCard from './ProjectCardHC'
+import SingleProject from './SingleProject'
 // import ProjectBuddy from './ProjectBuddy'
 // import ProjectDevDeals from './ProjectDevDeals'
 // import ProjectWeeMan from './ProjectWeeMan'
@@ -15,13 +16,9 @@ export default function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects/:id" element={<ProjectCard />} />
-        {/* <Route path="/projects/1" element={<ProjectBuddy />} />
-      <Route path="/projects/2" element={<ProjectWeeMan />} /> */}
-        {/* <Route path="/projects/3" element={<ProjectLostandFound />} />
-        <Route path="/projects/4" element={<ProjectDevDeals />} /> */}
+        <Route path="/projects/:id" element={<SingleProject />} />
       </Routes>
-      <ProjectCard />
+      {/* <ProjectCard /> */}
       <Footer />
     </>
   )

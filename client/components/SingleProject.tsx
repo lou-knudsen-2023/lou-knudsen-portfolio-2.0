@@ -1,20 +1,30 @@
-// import { useParams } from 'react-router'
+import React from 'react'
 import { Projects } from '../../commons/model'
+import {
+  Typography,
+  Container,
+  Box,
+} from '@mui/material'
 
 interface Props {
   projectProp: Projects
 }
 
 export default function SingleProject(props: Props) {
-  const { name, price, mfg, inStock, id } = props.projectProp
+  const { name, price, mfg, inStock} = props.projectProp
+  const id = Number(props.projectProps.id)
 
-  return (
-    <div className="widget-container">
-      <h1>{name}</h1>
-      <p>Price: {price}</p>
-      <p>Manufacturer: {mfg}</p>
-      <p>Items in stock: {inStock}</p>
-      <p>Product ID: {id}</p>
-    </div>
-  )
+return (
+  <>
+    {Object.values(props.projectProp).map((value) => (
+      <Container maxWidth="lg" key={value.id}>
+        <Box>
+          <Typography>
+            {value.name}
+          </Typography>
+        </Box>
+      </Container>
+    ))}
+  </>
+);
 }
