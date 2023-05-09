@@ -15,7 +15,6 @@ const projectURL = '/api/v1/projects/'
 export function getAllProjectsCS(): Promise<Projects[]> {
   return request.get(projectURL)
   .then((responseObj) => responseObj.body)
-  console.log(responseObj.body)
 }
 
 export function delProjectCS(id: number) {
